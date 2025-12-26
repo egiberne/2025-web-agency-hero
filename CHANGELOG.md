@@ -12,8 +12,11 @@ See all notable changes to this project documented in this file.
 
 - Upload files: CHANGELOG.md, README.md, style.css, index.html, faded-office.png
 
+### Changed
+
+- Update the width of the sections
+
 ### Deprecated
 ### Removed
-### Changed
 ### Fixed
 ### Secured
