@@ -44,3 +44,9 @@ span {
     text-decoration: 4px underline #0EA5E9;
 }
 
+footer {
+    text-align:center;
+      width:1000px;
+     margin:0 auto;
+}
+

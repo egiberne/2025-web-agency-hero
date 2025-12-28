@@ -1,4 +1,4 @@
-# Web Agency Hero📕
+# Web Agency Hero 🌐
 _A responsive and accessible Web Page Hero section._
 
 ## ✨ Built To
