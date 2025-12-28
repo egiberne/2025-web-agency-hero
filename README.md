@@ -27,7 +27,7 @@ Here are the concepts praticed :
 ![A video about the web agency hero section](./image.gif "See the Web Agency hero section?" )
 
 ### 🎮 Live
-[Web Agency Hero](https://2025-the-daily-dribble.netlify.app/)
+[Web Agency Hero](https://2025-web-agency-hero.netlify.app/)
 
 ## Status
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
