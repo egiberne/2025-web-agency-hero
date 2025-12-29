@@ -1,19 +1,12 @@
+
+/*typography*/
 body {
    font-family: "Open Sans", sans-serif;
    color:#020202;
   
 }
 
-header{
-     background-image:url("./img/faded-office.png");
-     background-size:cover;
-     padding: 40px 40px 80px 40px;
-     display:flex;
-     flex-direction: column;
-     width:1000px;
-     margin:0 auto;
-     
-}
+
 
 h1{
     width:300px;
@@ -40,13 +33,37 @@ button {
     
 }
 
+button:hover{
+    cursor:pointer;
+}
+
 span {
     text-decoration: 4px underline #0EA5E9;
 }
 
+
+ion-icon {
+    font-size: 2rem;
+    color:#020202;
+
+}
+
+
+/*layout*/
+header{
+     background-image:url("./img/faded-office.png");
+     background-size:cover;
+     padding: 40px 40px 80px 40px;
+     display:flex;
+     flex-direction: column;
+     width:1000px;
+     margin:0 auto;
+     
+}
+
 footer {
     text-align:center;
-      width:1000px;
-     margin:0 auto;
+    width:1000px;
+    margin:0 auto;
 }
 

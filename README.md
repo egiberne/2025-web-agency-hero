@@ -9,7 +9,7 @@ Here are technologies:
 |Items|Descriptions|
 |----|-----|
 |Stack|Front-end|
-|Languages|HTML, CSS|
+|Languages|HTML, CSS, JS|
 |Editor|VS Code|
 |Testing|Web Browser|
 |Database|n/a|
