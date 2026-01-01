@@ -12,7 +12,7 @@ Here are technologies:
 |Languages|HTML, CSS, JS|
 |Editor|VS Code|
 |Testing|Web Browser|
-|Database|n/a|
+|Database|Windows.localStorage|
 |AI|n/a|
 
 ## 📚 Built On
@@ -20,6 +20,7 @@ Here are the concepts praticed :
 
 - [x] Implementing flex concept
 - [x] Apply basic web content accessibity principal
+- [x] Leverage `localStorage` to implement a javaScript visit counter
 
 ## 📺Demo
 

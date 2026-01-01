@@ -4,7 +4,21 @@ See all notable changes to this project documented in this file.
 
 ## [Unreleased]
 
-- Add a function to count the visitors
+- Add a function to count the global unique visitors
+- Save current visitor ID and number of visits in a javascript object and store it in the localStorage
+- Change image background
+
+
+## [0.0.4] - 2026-01-01
+
+### Added 
+
+- Implement a function to count all the visits of the current user
+- Implement element to display all the visits of the current user
+
+### Changed
+
+- Update the text
 
 ## [0.0.3] - 2025-12-28
 
