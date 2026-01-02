@@ -4,9 +4,15 @@ See all notable changes to this project documented in this file.
 
 ## [Unreleased]
 
-- Add a function to count the global unique visitors
-- Save current visitor ID and number of visits in a javascript object and store it in the localStorage
 - Change image background
+
+
+## [0.0.5] - 2026-01-02
+
+### Added
+
+- Implemented script to save the index.js file information in an object 
+- Implemented script to store the index.js file information in the localstorage
 
 
 ## [0.0.4] - 2026-01-01

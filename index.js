@@ -18,13 +18,15 @@ button.addEventListener("click", function(){
 const counter = document.getElementById("counter")
 
 
+
+
 document.addEventListener('DOMContentLoaded', function(){ // Update the count on each page load : https://www.webdevtutor.net/blog/javascript-besucherz%C3%A4hler ; https://developer.mozilla.org/en-US/docs/Web/API/Document#events
-    getAllVisits()
+    countAllVisits()
 })
 
 
 
-function getAllVisits(){ // Count all your visits
+function countAllVisits(){ // Count all your visits
         
     // Get current count from localStorage
     let count = localStorage.getItem("visitCount");
@@ -49,58 +51,25 @@ function getAllVisits(){ // Count all your visits
     document.getElementById("counter").innerText = count;
     console.log(count)
 
-
-
-}
-
-
-
-function getUniqueVisits(){ // Count global unique visits
-
-    // Set a initial UUID for current user : 128-bit, 32-char, 32-Nybble : https://www.geeksforgeeks.org/javascript/how-to-create-a-guid-uuid-in-javascript/
-    let uuid = crypto.randomUUID()
-
-    console.log("initial UUID" + uuid)
-
-    // Store UUID for current user
-
-    localStorage.setItem("visitorUUID", uuid)
-        
-    const counter = document.getElementById("counter")
-    // Get stored current uuid from localStorage
-    let storedUUID = localStorage.getItem("visitorUUID")
-
-    // Get current count from localStorage
-    let count = localStorage.getItem("visitCount");
-
-    if (count === null) { //No count exists, no visitor before
-        count = 1;
-
-        console.log("Initialize to 1")
-
-    } else if(storedUUID === initialUUID){// Otherwise Increment count
-
-        console.log("Increment to 1")
-
-        count = Number(count) + 1;
-
-
-    }
-    
-    // Store updated count
-    localStorage.setItem("visitCount", count);
-
-    // Store updated UUID
-    uuid = crypto.randomUUID() // Get new UUID
-    localStorage.setItem("visitorUUID", uuid) // Reset UUID stored
-
-    // Display count
-        document.getElementById("counter").innerText = count;
-        console.log(count)
-        console.log("new UUID" + uuid)
+    return count
 
 }
 
+// Object
+
+const nfo= {
+    md5 : "91AD12FDFC4744A6FADC8DA305DA62AB",
+    ver : "0.0.5",
+    cmd : "Get-FileHash .\index.js -Algorithm md5"
+}
 
 
+const infoToStore = JSON.stringify(nfo)
 
+localStorage.setItem("info", infoToStore)
+
+const infoToExtract = localStorage.getItem("info")
+
+const infoToDisplay = JSON.parse(infoToExtract)
+
+console.log(`Script md5 ${infoToDisplay.md5} and version ${infoToDisplay.ver}`)
