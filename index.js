@@ -12,18 +12,14 @@ button.addEventListener("click", function(){
     button.disabled = true;
     
     
-}
-)
+})
 
 const counter = document.getElementById("counter")
-
-
 
 
 document.addEventListener('DOMContentLoaded', function(){ // Update the count on each page load : https://www.webdevtutor.net/blog/javascript-besucherz%C3%A4hler ; https://developer.mozilla.org/en-US/docs/Web/API/Document#events
     countAllVisits()
 })
-
 
 
 function countAllVisits(){ // Count all your visits
@@ -57,14 +53,14 @@ function countAllVisits(){ // Count all your visits
 
 // Object
 
-const nfo= {
-    md5 : "91AD12FDFC4744A6FADC8DA305DA62AB",
-    ver : "0.0.5",
-    cmd : "Get-FileHash .\index.js -Algorithm md5"
+const infoApp= {
+    name : "web agency hero",
+    version : "0.0.5",
+    files : ["index.js","index.html","style.css,faded-office.png"]
 }
 
 
-const infoToStore = JSON.stringify(nfo)
+const infoToStore = JSON.stringify(infoApp)
 
 localStorage.setItem("info", infoToStore)
 
@@ -72,4 +68,4 @@ const infoToExtract = localStorage.getItem("info")
 
 const infoToDisplay = JSON.parse(infoToExtract)
 
-console.log(`Script md5 ${infoToDisplay.md5} and version ${infoToDisplay.ver}`)
+    console.log(`AppName ${infoToDisplay.name}, version ${infoToDisplay.version} and files ${infoToDisplay.files[0]}`)

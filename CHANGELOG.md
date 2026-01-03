@@ -7,6 +7,14 @@ See all notable changes to this project documented in this file.
 - Change image background
 
 
+## [0.0.6] - 2026-01-03
+
+### Change
+
+- Change the information stored in the localStorage
+- Updated the version
+
+
 ## [0.0.5] - 2026-01-02
 
 ### Added
@@ -14,6 +22,9 @@ See all notable changes to this project documented in this file.
 - Implemented script to save the index.js file information in an object 
 - Implemented script to store the index.js file information in the localstorage
 
+### Changed
+
+- Rename the function `getAllVisits()` to `countAllVisits()`
 
 ## [0.0.4] - 2026-01-01
 
